@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anirudh | Hardware Alchemist</title>
-    
+
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    
+
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
 
@@ -34,10 +35,11 @@
         body {
             font-family: 'Inter', sans-serif;
             background-color: black;
-            color: #f4f4f5; /* zinc-100 */
+            color: #f4f4f5;
+            /* zinc-100 */
             overflow-x: hidden;
         }
-        
+
         /* Custom Cursor Styles */
         #custom-cursor {
             pointer-events: none;
@@ -50,7 +52,8 @@
 
         /* Selection Color */
         ::selection {
-            background-color: #10b981; /* emerald-500 */
+            background-color: #10b981;
+            /* emerald-500 */
             color: white;
         }
 
@@ -58,21 +61,25 @@
         ::-webkit-scrollbar {
             width: 8px;
         }
+
         ::-webkit-scrollbar-track {
-            background: #18181b; 
+            background: #18181b;
         }
+
         ::-webkit-scrollbar-thumb {
-            background: #27272a; 
+            background: #27272a;
             border-radius: 4px;
         }
+
         ::-webkit-scrollbar-thumb:hover {
-            background: #3f3f46; 
+            background: #3f3f46;
         }
 
         /* Navbar Link Underline Animation */
         .nav-link {
             position: relative;
         }
+
         .nav-link::after {
             content: '';
             position: absolute;
@@ -80,9 +87,11 @@
             left: 0;
             width: 0;
             height: 2px;
-            background-color: #10b981; /* emerald-500 */
+            background-color: #10b981;
+            /* emerald-500 */
             transition: width 0.3s ease;
         }
+
         .nav-link:hover::after {
             width: 100%;
         }
@@ -90,7 +99,8 @@
         /* Hero typing caret + sizing */
         #typed-word {
             display: inline-block;
-            min-width: 9ch; /* reserve space to prevent layout shift while typing */
+            min-width: 9ch;
+            /* reserve space to prevent layout shift while typing */
             font-family: 'SFMono-Regular', ui-monospace, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
         }
 
@@ -114,8 +124,17 @@
         }
 
         @keyframes glowPulse {
-            0%, 100% { opacity: 0.6; transform: scale(1); }
-            50% { opacity: 0.8; transform: scale(1.05); }
+
+            0%,
+            100% {
+                opacity: 0.6;
+                transform: scale(1);
+            }
+
+            50% {
+                opacity: 0.8;
+                transform: scale(1.05);
+            }
         }
 
         .profile-card {
@@ -277,6 +296,7 @@
         }
     </style>
 </head>
+
 <body class="antialiased">
 
     <!-- Custom Cursor -->
@@ -284,25 +304,32 @@
 
     <!-- Dynamic Background Mesh -->
     <div class="fixed inset-0 z-0 opacity-20 pointer-events-none overflow-hidden">
-        <div class="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-emerald-600 rounded-full blur-[120px] animate-pulse-slow"></div>
-        <div class="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-blue-600 rounded-full blur-[120px] animate-pulse-slow" style="animation-delay: 2s;"></div>
+        <div
+            class="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-emerald-600 rounded-full blur-[120px] animate-pulse-slow">
+        </div>
+        <div class="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-blue-600 rounded-full blur-[120px] animate-pulse-slow"
+            style="animation-delay: 2s;"></div>
     </div>
 
     <!-- Navigation -->
     <nav id="navbar" class="fixed top-0 left-0 right-0 z-40 transition-all duration-300 py-8">
         <div class="container mx-auto px-6 md:px-12 flex justify-between items-center">
-            <a href="#" class="text-xl font-bold tracking-tighter hover:text-emerald-400 transition-colors uppercase cursor-hover-trigger">
+            <a href="#"
+                class="text-xl font-bold tracking-tighter hover:text-emerald-400 transition-colors uppercase cursor-hover-trigger">
                 Anirudh H S
             </a>
             <div class="hidden md:flex space-x-8 text-sm font-medium text-zinc-400">
                 <a href="#work" class="nav-link hover:text-white transition-colors cursor-hover-trigger">Projects</a>
-                <a href="#achievements" class="nav-link hover:text-white transition-colors cursor-hover-trigger">Achievements</a>
-                <a href="#education" class="nav-link hover:text-white transition-colors cursor-hover-trigger">Education</a>
+                <a href="#achievements"
+                    class="nav-link hover:text-white transition-colors cursor-hover-trigger">Achievements</a>
+                <a href="#education"
+                    class="nav-link hover:text-white transition-colors cursor-hover-trigger">Education</a>
                 <a href="#contact" class="nav-link hover:text-white transition-colors cursor-hover-trigger">Contact</a>
             </div>
             <!-- Changed button to anchor tag (<a>) to link to the file -->
             <!-- Ensure 'resume.pdf' is in the same folder as this HTML file -->
-            <a href="assets/Anirudh H S.pdf" target="_blank" class="cursor-hover-trigger px-5 py-2 text-sm font-medium bg-white text-black rounded-full hover:bg-zinc-200 transition-transform hover:scale-105 active:scale-95 inline-block">
+            <a href="assets/Anirudh H S.pdf" target="_blank"
+                class="cursor-hover-trigger px-5 py-2 text-sm font-medium bg-white text-black rounded-full hover:bg-zinc-200 transition-transform hover:scale-105 active:scale-95 inline-block">
                 Resume
             </a>
         </div>
@@ -325,36 +352,46 @@
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 <!-- Text Content -->
                 <div>
-                    <div class="reveal opacity-0 translate-y-12 transition-all duration-1000 ease-out" style="transition-delay: 100ms;">
+                    <div class="reveal opacity-0 translate-y-12 transition-all duration-1000 ease-out"
+                        style="transition-delay: 100ms;">
                         <h1 class="text-6xl md:text-8xl lg:text-9xl font-bold tracking-tighter leading-none mb-8">
                             Hardware <br />
-                            <span id="typed-word" data-word="Alchemist." class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-cyan-400">Alchemist.</span>
+                            <span id="typed-word" data-word="Alchemist."
+                                class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-cyan-400">Alchemist.</span>
                         </h1>
                     </div>
-                    
-                    <div class="reveal opacity-0 translate-y-12 transition-all duration-1000 ease-out" style="transition-delay: 300ms;">
+
+                    <div class="reveal opacity-0 translate-y-12 transition-all duration-1000 ease-out"
+                        style="transition-delay: 300ms;">
                         <p class="text-xl md:text-2xl text-zinc-400 max-w-2xl leading-relaxed mb-12">
-                            Building intelligent, real-world <span class="text-cyan-400">robotics</span> & <span class="text-cyan-400">embedded systems</span>. 
+                            Building intelligent, real-world <span class="text-cyan-400">robotics</span> & <span
+                                class="text-cyan-400">embedded systems</span>.
                             Turning raw hardware into smart, connected products.
                         </p>
                     </div>
 
-                    <div class="reveal opacity-0 translate-y-12 transition-all duration-1000 ease-out" style="transition-delay: 500ms;">
+                    <div class="reveal opacity-0 translate-y-12 transition-all duration-1000 ease-out"
+                        style="transition-delay: 500ms;">
                         <div class="flex flex-wrap gap-4">
                             <!-- Skills -->
-                            <span class="flex items-center gap-2 px-4 py-2 rounded-full border border-zinc-800 text-zinc-400 text-sm hover:border-emerald-500/50 hover:text-emerald-400 transition-colors cursor-default">
+                            <span
+                                class="flex items-center gap-2 px-4 py-2 rounded-full border border-zinc-800 text-zinc-400 text-sm hover:border-emerald-500/50 hover:text-emerald-400 transition-colors cursor-default">
                                 <i data-lucide="code" class="w-4 h-4"></i> C / C++
                             </span>
-                            <span class="flex items-center gap-2 px-4 py-2 rounded-full border border-zinc-800 text-zinc-400 text-sm hover:border-emerald-500/50 hover:text-emerald-400 transition-colors cursor-default">
+                            <span
+                                class="flex items-center gap-2 px-4 py-2 rounded-full border border-zinc-800 text-zinc-400 text-sm hover:border-emerald-500/50 hover:text-emerald-400 transition-colors cursor-default">
                                 <i data-lucide="zap" class="w-4 h-4"></i> IoT / MQTT
                             </span>
-                            <span class="flex items-center gap-2 px-4 py-2 rounded-full border border-zinc-800 text-zinc-400 text-sm hover:border-emerald-500/50 hover:text-emerald-400 transition-colors cursor-default">
+                            <span
+                                class="flex items-center gap-2 px-4 py-2 rounded-full border border-zinc-800 text-zinc-400 text-sm hover:border-emerald-500/50 hover:text-emerald-400 transition-colors cursor-default">
                                 <i data-lucide="layers" class="w-4 h-4"></i> Node-RED
                             </span>
-                            <span class="flex items-center gap-2 px-4 py-2 rounded-full border border-zinc-800 text-zinc-400 text-sm hover:border-emerald-500/50 hover:text-emerald-400 transition-colors cursor-default">
+                            <span
+                                class="flex items-center gap-2 px-4 py-2 rounded-full border border-zinc-800 text-zinc-400 text-sm hover:border-emerald-500/50 hover:text-emerald-400 transition-colors cursor-default">
                                 <i data-lucide="cpu" class="w-4 h-4"></i> Embedded Systems
                             </span>
-                            <span class="flex items-center gap-2 px-4 py-2 rounded-full border border-zinc-800 text-zinc-400 text-sm hover:border-emerald-500/50 hover:text-emerald-400 transition-colors cursor-default">
+                            <span
+                                class="flex items-center gap-2 px-4 py-2 rounded-full border border-zinc-800 text-zinc-400 text-sm hover:border-emerald-500/50 hover:text-emerald-400 transition-colors cursor-default">
                                 <i data-lucide="layout" class="w-4 h-4"></i> HTML5 / CSS3
                             </span>
                         </div>
@@ -362,11 +399,12 @@
                 </div>
 
                 <!-- Profile Card Section -->
-                <div class="reveal opacity-0 translate-y-12 transition-all duration-1000 ease-out" style="transition-delay: 200ms;">
+                <div class="reveal opacity-0 translate-y-12 transition-all duration-1000 ease-out"
+                    style="transition-delay: 200ms;">
                     <div class="profile-card-container">
                         <!-- Glow effect behind card -->
                         <div class="profile-card-glow"></div>
-                        
+
                         <!-- Profile Card -->
                         <div class="profile-card">
                             <!-- Avatar Section -->
@@ -374,11 +412,7 @@
                                 <div class="avatar-wrapper">
                                     <div class="avatar-square">
                                         <div class="avatar-circle">
-                                            <img 
-                                                src="assets/ani.jpg" 
-                                                alt="Anirudh H S" 
-                                                class="avatar-image"
-                                            >
+                                            <img src="assets/ani.jpg" alt="Anirudh H S" class="avatar-image">
                                         </div>
                                     </div>
                                 </div>
@@ -386,25 +420,29 @@
 
                             <!-- Name -->
                             <h2 class="profile-name">Anirudh H S</h2>
-                            
+
                             <!-- Title -->
                             <p class="profile-title">Hardware Engineer & Embedded Systems</p>
 
                             <!-- Social Icons -->
                             <div class="social-icons-container">
                                 <div class="social-icon-wrapper" data-tooltip="GitHub">
-                                    <a href="https://github.com/anirudh0405" target="_blank" rel="noopener noreferrer" class="social-icon">
+                                    <a href="https://github.com/anirudh0405" target="_blank" rel="noopener noreferrer"
+                                        class="social-icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                                            <path
+                                                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
                                         </svg>
                                     </a>
                                 </div>
 
                                 <div class="social-icon-wrapper" data-tooltip="LinkedIn">
-                                    <a href="https://www.linkedin.com/in/anirudh-h-s-249968254/" target="_blank" rel="noopener noreferrer" class="social-icon">
+                                    <a href="https://www.linkedin.com/in/anirudh-h-s-249968254/" target="_blank"
+                                        rel="noopener noreferrer" class="social-icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/>
-                                            <circle cx="4" cy="4" r="2"/>
+                                            <path
+                                                d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z" />
+                                            <circle cx="4" cy="4" r="2" />
                                         </svg>
                                     </a>
                                 </div>
@@ -412,8 +450,9 @@
                                 <div class="social-icon-wrapper" data-tooltip="Email">
                                     <a href="mailto:anirudhhs0405@gmail.com" class="social-icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                                            <polyline points="22,6 12,13 2,6"/>
+                                            <path
+                                                d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                            <polyline points="22,6 12,13 2,6" />
                                         </svg>
                                     </a>
                                 </div>
@@ -436,35 +475,47 @@
                 <div class="reveal opacity-0 translate-y-12 transition-all duration-1000 ease-out">
                     <h2 class="text-4xl md:text-5xl font-bold tracking-tight">Featured Projects</h2>
                 </div>
-                <div class="reveal opacity-0 translate-y-12 transition-all duration-1000 ease-out" style="transition-delay: 200ms;">
+                <div class="reveal opacity-0 translate-y-12 transition-all duration-1000 ease-out"
+                    style="transition-delay: 200ms;">
                     <p class="text-zinc-500 mt-4 md:mt-0">Hardware & Software Integration</p>
                 </div>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
-                
+
                 <!-- Project 1: Cloud Energy Monitor -->
-                <div class="reveal opacity-0 translate-y-12 transition-all duration-1000 ease-out" style="transition-delay: 0ms;">
-                    <a href="https://github.com/anirudh0405/Real-time-cloud-based-smart-energy-meter" target="_blank" rel="noopener noreferrer" class="cursor-hover-trigger group relative w-full aspect-[4/3] cursor-pointer overflow-hidden rounded-2xl bg-zinc-900 border border-zinc-800 block">
+                <div class="reveal opacity-0 translate-y-12 transition-all duration-1000 ease-out"
+                    style="transition-delay: 0ms;">
+                    <a href="https://github.com/anirudh0405/Real-time-cloud-based-smart-energy-meter" target="_blank"
+                        rel="noopener noreferrer"
+                        class="cursor-hover-trigger group relative w-full aspect-[4/3] cursor-pointer overflow-hidden rounded-2xl bg-zinc-900 border border-zinc-800 block">
                         <!-- Project Image -->
-                        <img src="https://images.unsplash.com/photo-1558346490-a72e53ae2d4f?auto=format&fit=crop&q=80&w=1000" 
-                             alt="Cloud Energy Monitor" 
-                             class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                        
+                        <img src="https://images.unsplash.com/photo-1558346490-a72e53ae2d4f?auto=format&fit=crop&q=80&w=1000"
+                            alt="Cloud Energy Monitor"
+                            class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+
                         <!-- Background Gradient Overlay (increased opacity for readability) -->
-                        <div class="absolute inset-0 bg-gradient-to-br from-cyan-900 to-blue-900 opacity-60 transition-transform duration-700 group-hover:scale-110"></div>
-                        
+                        <div
+                            class="absolute inset-0 bg-gradient-to-br from-cyan-900 to-blue-900 opacity-60 transition-transform duration-700 group-hover:scale-110">
+                        </div>
+
                         <div class="absolute inset-0 p-8 flex flex-col justify-end transition-all duration-500">
-                            <div class="transform translate-y-4 opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
-                                <p class="text-sm font-medium tracking-wider text-zinc uppercase mb-2">IoT & Embedded Systems</p>
+                            <div
+                                class="transform translate-y-4 opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
+                                <p class="text-sm font-medium tracking-wider text-zinc uppercase mb-2">IoT & Embedded
+                                    Systems</p>
                                 <div class="flex items-center justify-between">
                                     <h3 class="text-2xl font-bold text-white">Cloud Energy Monitor</h3>
-                                    <span class="p-3 bg-white text-black rounded-full transform rotate-45 group-hover:rotate-0 transition-transform duration-500">
+                                    <span
+                                        class="p-3 bg-white text-black rounded-full transform rotate-45 group-hover:rotate-0 transition-transform duration-500">
                                         <i data-lucide="arrow-up-right" class="w-5 h-5"></i>
                                     </span>
                                 </div>
                                 <!-- Fix: text-zinc-400 changed to text-white and line-clamp-3 removed on hover -->
-                                <p class="mt-4 text-white line-clamp-3 leading-relaxed group-hover:line-clamp-none transition-all duration-300">Real-time IoT system where sensors stream voltage, current, and power data to a cloud server via MQTT for remote monitoring and analytics.</p>
+                                <p
+                                    class="mt-4 text-white line-clamp-3 leading-relaxed group-hover:line-clamp-none transition-all duration-300">
+                                    Real-time IoT system where sensors stream voltage, current, and power data to a
+                                    cloud server via MQTT for remote monitoring and analytics.</p>
                             </div>
                             <div class="absolute bottom-8 left-8 transition-opacity duration-300 group-hover:opacity-0">
                                 <h3 class="text-2xl font-bold text-white">Cloud Energy Monitor</h3>
@@ -474,27 +525,37 @@
                 </div>
 
                 <!-- Project 2: Docnest -->
-                <div class="reveal opacity-0 translate-y-12 transition-all duration-1000 ease-out" style="transition-delay: 100ms;">
-                    <a href="https://github.com/anirudh0405/docnest" target="_blank" rel="noopener noreferrer" class="cursor-hover-trigger group relative w-full aspect-[4/3] cursor-pointer overflow-hidden rounded-2xl bg-zinc-900 border border-zinc-800 block">
+                <div class="reveal opacity-0 translate-y-12 transition-all duration-1000 ease-out"
+                    style="transition-delay: 100ms;">
+                    <a href="https://github.com/anirudh0405/docnest" target="_blank" rel="noopener noreferrer"
+                        class="cursor-hover-trigger group relative w-full aspect-[4/3] cursor-pointer overflow-hidden rounded-2xl bg-zinc-900 border border-zinc-800 block">
                         <!-- Project Image -->
-                        <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80&w=1000" 
-                             alt="Docnest Healthcare App" 
-                             class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                        
+                        <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80&w=1000"
+                            alt="Docnest Healthcare App"
+                            class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+
                         <!-- Background Gradient Overlay (increased opacity for readability) -->
-                        <div class="absolute inset-0 bg-gradient-to-br from-emerald-900 to-teal-900 opacity-60 transition-transform duration-700 group-hover:scale-110"></div>
-                        
+                        <div
+                            class="absolute inset-0 bg-gradient-to-br from-emerald-900 to-teal-900 opacity-60 transition-transform duration-700 group-hover:scale-110">
+                        </div>
+
                         <div class="absolute inset-0 p-8 flex flex-col justify-end transition-all duration-500">
-                            <div class="transform translate-y-4 opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
-                                <p class="text-sm font-medium tracking-wider text-zinc uppercase mb-2">Healthcare Application</p>
+                            <div
+                                class="transform translate-y-4 opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
+                                <p class="text-sm font-medium tracking-wider text-zinc uppercase mb-2">Healthcare
+                                    Application</p>
                                 <div class="flex items-center justify-between">
                                     <h3 class="text-2xl font-bold text-white">Docnest</h3>
-                                    <span class="p-3 bg-white text-black rounded-full transform rotate-45 group-hover:rotate-0 transition-transform duration-500">
+                                    <span
+                                        class="p-3 bg-white text-black rounded-full transform rotate-45 group-hover:rotate-0 transition-transform duration-500">
                                         <i data-lucide="arrow-up-right" class="w-5 h-5"></i>
                                     </span>
                                 </div>
                                 <!-- Fix: text-zinc-400 changed to text-white and line-clamp-3 removed on hover -->
-                                <p class="mt-4 text-white line-clamp-3 leading-relaxed group-hover:line-clamp-none transition-all duration-300">A comprehensive healthcare app facilitating doctor appointment bookings, schedule management, and easy access to medical information.</p>
+                                <p
+                                    class="mt-4 text-white line-clamp-3 leading-relaxed group-hover:line-clamp-none transition-all duration-300">
+                                    A comprehensive healthcare app facilitating doctor appointment bookings, schedule
+                                    management, and easy access to medical information.</p>
                             </div>
                             <div class="absolute bottom-8 left-8 transition-opacity duration-300 group-hover:opacity-0">
                                 <h3 class="text-2xl font-bold text-white">Docnest</h3>
@@ -504,38 +565,99 @@
                 </div>
 
                 <!-- Project 3: Smart Post Accident detection and Response System -->
-                <div class="reveal opacity-0 translate-y-12 transition-all duration-1000 ease-out" style="transition-delay: 100ms;">
-                    <a href="https://github.com/anirudh0405/accident-detection" target="_blank" rel="noopener noreferrer" class="cursor-hover-trigger group relative w-full aspect-[4/3] cursor-pointer overflow-hidden rounded-2xl bg-zinc-900 border border-zinc-800 block">
+                <div class="reveal opacity-0 translate-y-12 transition-all duration-1000 ease-out"
+                    style="transition-delay: 100ms;">
+                    <a href="https://github.com/anirudh0405/accident-detection" target="_blank"
+                        rel="noopener noreferrer"
+                        class="cursor-hover-trigger group relative w-full aspect-[4/3] cursor-pointer overflow-hidden rounded-2xl bg-zinc-900 border border-zinc-800 block">
                         <!-- Project Image -->
-                        <img src="assets/acc.jpg" 
-                             alt="Smart Post Accident detection and Response System" 
-                             class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                        
+                        <img src="assets/acc.jpg" alt="Smart Post Accident detection and Response System"
+                            class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+
                         <!-- Background Gradient Overlay (increased opacity for readability) -->
-                        <div class="absolute inset-0 bg-gradient-to-br from-emerald-900 to-teal-900 opacity-60 transition-transform duration-700 group-hover:scale-110"></div>
-                        
+                        <div
+                            class="absolute inset-0 bg-gradient-to-br from-emerald-900 to-teal-900 opacity-60 transition-transform duration-700 group-hover:scale-110">
+                        </div>
+
                         <div class="absolute inset-0 p-8 flex flex-col justify-end transition-all duration-500">
-                            <div class="transform translate-y-4 opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
-                                <p class="text-sm font-medium tracking-wider text-zinc uppercase mb-2">Smart Post Accident detection and Response System</p>
+                            <div
+                                class="transform translate-y-4 opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
+                                <p class="text-sm font-medium tracking-wider text-zinc uppercase mb-2">IOT & Embedded Systems</p>
                                 <div class="flex items-center justify-between">
-                                    <h3 class="text-2xl font-bold text-white">Smart Post Accident detection and Response System</h3>
-                                    <span class="p-3 bg-white text-black rounded-full transform rotate-45 group-hover:rotate-0 transition-transform duration-500">
+                                    <h3 class="text-2xl font-bold text-white">Smart Post Accident detection and Response
+                                        System</h3>
+                                    <span
+                                        class="p-3 bg-white text-black rounded-full transform rotate-45 group-hover:rotate-0 transition-transform duration-500">
                                         <i data-lucide="arrow-up-right" class="w-5 h-5"></i>
                                     </span>
                                 </div>
                                 <!-- Fix: text-zinc-400 changed to text-white and line-clamp-3 removed on hover -->
-                                <p class="mt-4 text-white line-clamp-3 leading-relaxed group-hover:line-clamp-none transition-all duration-300"> IoT-based Smart Post Accident Detection and Response System using sensors, GPS, and GSM
-                                    modules to automatically detect vehicle collisions, pinpoint location, and send real-time emergency alerts
-                                    to contacts and authorities, enabling faster rescue response IoT-based Smart Post Accident Detection and Response System using sensors, GPS, and GSM
- modules to automatically detect vehicle collisions, pinpoint location, and send real-time emergency alerts
- to contacts and authorities, enabling faster rescue response.</p>
+                                <p
+                                    class="mt-4 text-white line-clamp-3 leading-relaxed group-hover:line-clamp-none transition-all duration-300">
+                                    IoT-based Smart Post Accident Detection and Response System using sensors, GPS, and
+                                    GSM
+                                    modules to automatically detect vehicle collisions, pinpoint location, and send
+                                    real-time emergency alerts
+                                    to contacts and authorities, enabling faster rescue response IoT-based Smart Post
+                                    Accident Detection and Response System using sensors, GPS, and GSM
+                                    modules to automatically detect vehicle collisions, pinpoint location, and send
+                                    real-time emergency alerts
+                                    to contacts and authorities, enabling faster rescue response.</p>
                             </div>
                             <div class="absolute bottom-8 left-8 transition-opacity duration-300 group-hover:opacity-0">
-                                <h3 class="text-2xl font-bold text-white">Smart Post Accident detection and Response System</h3>
+                                <h3 class="text-2xl font-bold text-white">Smart Post Accident detection and Response
+                                    System</h3>
                             </div>
                         </div>
                     </a>
                 </div>
+
+                <!-- Project 4: Analog Design of LDO using CMOS 45nm Technology -->
+                <div class="reveal opacity-0 translate-y-12 transition-all duration-1000 ease-out"
+                    style="transition-delay: 100ms;">
+                    <a href="https://github.com/anirudh0405/Analog-design-of-LDO-using-CMOS-45nm-Technology"
+                        target="_blank" rel="noopener noreferrer"
+                        class="cursor-hover-trigger group relative w-full aspect-[4/3] cursor-pointer overflow-hidden rounded-2xl bg-zinc-900 border border-zinc-800 block">
+                        <!-- Project Image -->
+                        <img src="assets/VLSI_Chip.jpg" alt=" Analog Design of LDO using CMOS 45nm Technology"
+                            class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+
+                        <!-- Background Gradient Overlay (increased opacity for readability) -->
+                        <div
+                            class="absolute inset-0 bg-gradient-to-br from-emerald-900 to-teal-900 opacity-60 transition-transform duration-700 group-hover:scale-110">
+                        </div>
+
+                        <div class="absolute inset-0 p-8 flex flex-col justify-end transition-all duration-500">
+                            <div
+                                class="transform translate-y-4 opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
+                                <p class="text-sm font-medium tracking-wider text-zinc uppercase mb-2">VLSI Design</p>
+                                <div class="flex items-center justify-between">
+                                    <h3 class="text-2xl font-bold text-white">Analog Design of LDO using CMOS 45nm
+                                        Technology</h3>
+                                    <span
+                                        class="p-3 bg-white text-black rounded-full transform rotate-45 group-hover:rotate-0 transition-transform duration-500">
+                                        <i data-lucide="arrow-up-right" class="w-5 h-5"></i>
+                                    </span>
+                                </div>
+                                <!-- Fix: text-zinc-400 changed to text-white and line-clamp-3 removed on hover -->
+                                <p
+                                    class="mt-4 text-white line-clamp-3 leading-relaxed group-hover:line-clamp-none transition-all duration-300">
+                                    Designed a PMOS-based LDO regulator in 45 nm CMOS technology using Cadence Virtuoso.
+                                    Implemented a folded-cascode error amplifier with Miller compensation to ensure loop
+                                    stability and adequate phase margin. Performed DC, transient, load regulation, line
+                                    regulation, and PSRR analysis using Spectre. Designed full custom layout adhering to
+                                    45 nm design rules and completed DRC, LVS, and post-layout parasitic extraction
+                                    (PEX) verification. Evaluated post-layout performance impact on gain, stability, and
+                                    output regulation.</p>
+                            </div>
+                            <div class="absolute bottom-8 left-8 transition-opacity duration-300 group-hover:opacity-0">
+                                <h3 class="text-2xl font-bold text-white">Analog Design of LDO using CMOS 45nm
+                                    Technology</h3>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
 
             </div>
         </div>
@@ -552,7 +674,8 @@
             <div id="cert-slider" class="relative overflow-hidden rounded-2xl border border-zinc-800 bg-zinc-900/40">
                 <div class="cert-slide hidden p-8 md:p-10 flex-col md:flex-row gap-8 items-center">
                     <div class="w-full md:w-1/2 overflow-hidden rounded-xl border border-zinc-800">
-                        <img src="assets/python_page-0001.jpg" alt="Python OOP Certificate preview" class="w-full h-full object-cover">
+                        <img src="assets/python_page-0001.jpg" alt="Python OOP Certificate preview"
+                            class="w-full h-full object-cover">
                     </div>
                     <div class="flex-1 space-y-4">
                         <div class="flex items-center justify-between gap-4">
@@ -561,11 +684,15 @@
                                 <h3 class="text-2xl font-bold text-white">Python OOP Certificate</h3>
                                 <p class="text-zinc-500 text-sm">Issued June 1, 2025</p>
                             </div>
-                            <span class="px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 text-xs font-bold uppercase tracking-wider">Online</span>
+                            <span
+                                class="px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 text-xs font-bold uppercase tracking-wider">Online</span>
                         </div>
-                        <p class="text-zinc-300 leading-relaxed">Object-oriented programming foundations in Python: classes, inheritance, polymorphism, and design patterns applied to practical projects.</p>
+                        <p class="text-zinc-300 leading-relaxed">Object-oriented programming foundations in Python:
+                            classes, inheritance, polymorphism, and design patterns applied to practical projects.</p>
                         <div class="flex items-center gap-3">
-                            <a href="assets/python_page-0001.jpg" class="cursor-hover-trigger inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white text-black font-semibold hover:bg-zinc-200 transition-all">View Certificate</a>
+                            <a href="assets/python_page-0001.jpg"
+                                class="cursor-hover-trigger inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white text-black font-semibold hover:bg-zinc-200 transition-all">View
+                                Certificate</a>
                             <span class="text-zinc-500 text-sm">Credential ID: PY-OOP-2025</span>
                         </div>
                     </div>
@@ -573,7 +700,8 @@
 
                 <div class="cert-slide hidden p-8 md:p-10 flex-col md:flex-row gap-8 items-center">
                     <div class="w-full md:w-1/2 overflow-hidden rounded-xl border border-zinc-800">
-                        <img src="assets/c_page-0001.jpg" alt="C Programming Certificate preview" class="w-full h-full object-cover">
+                        <img src="assets/c_page-0001.jpg" alt="C Programming Certificate preview"
+                            class="w-full h-full object-cover">
                     </div>
                     <div class="flex-1 space-y-4">
                         <div class="flex items-center justify-between gap-4">
@@ -582,11 +710,15 @@
                                 <h3 class="text-2xl font-bold text-white">C Programming Certificate</h3>
                                 <p class="text-zinc-500 text-sm">Issued May 5, 2025</p>
                             </div>
-                            <span class="px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 text-xs font-bold uppercase tracking-wider">Online</span>
+                            <span
+                                class="px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 text-xs font-bold uppercase tracking-wider">Online</span>
                         </div>
-                        <p class="text-zinc-300 leading-relaxed">Systems-level C fundamentals: memory management, pointers, embedded-oriented patterns, and performance-focused coding practices.</p>
+                        <p class="text-zinc-300 leading-relaxed">Systems-level C fundamentals: memory management,
+                            pointers, embedded-oriented patterns, and performance-focused coding practices.</p>
                         <div class="flex items-center gap-3">
-                            <a href="assets/c_page-0001.jpg" class="cursor-hover-trigger inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white text-black font-semibold hover:bg-zinc-200 transition-all">View Certificate</a>
+                            <a href="assets/c_page-0001.jpg"
+                                class="cursor-hover-trigger inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white text-black font-semibold hover:bg-zinc-200 transition-all">View
+                                Certificate</a>
                             <span class="text-zinc-500 text-sm">Credential ID: C-PROG-2025</span>
                         </div>
                     </div>
@@ -594,7 +726,8 @@
 
                 <div class="cert-slide hidden p-8 md:p-10 flex-col md:flex-row gap-8 items-center">
                     <div class="w-full md:w-1/2 overflow-hidden rounded-xl border border-zinc-800">
-                        <img src="assets/forage_page-0001.jpg" alt="Solutions Architecture Certificate preview" class="w-full h-full object-cover">
+                        <img src="assets/forage_page-0001.jpg" alt="Solutions Architecture Certificate preview"
+                            class="w-full h-full object-cover">
                     </div>
                     <div class="flex-1 space-y-4">
                         <div class="flex items-center justify-between gap-4">
@@ -603,20 +736,26 @@
                                 <h3 class="text-2xl font-bold text-white">Solutions Architecture Job Simulation</h3>
                                 <p class="text-zinc-500 text-sm">Issued June 22, 2025</p>
                             </div>
-                            <span class="px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 text-xs font-bold uppercase tracking-wider">Virtual</span>
+                            <span
+                                class="px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 text-xs font-bold uppercase tracking-wider">Virtual</span>
                         </div>
-                        <p class="text-zinc-300 leading-relaxed">Cloud-first architecture, API design, and reliability scenarios practiced through simulated client requirements and solution write-ups.</p>
+                        <p class="text-zinc-300 leading-relaxed">Cloud-first architecture, API design, and reliability
+                            scenarios practiced through simulated client requirements and solution write-ups.</p>
                         <div class="flex items-center gap-3">
-                            <a href="assets/forage_page-0001.jpg" class="cursor-hover-trigger inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white text-black font-semibold hover:bg-zinc-200 transition-all">View Certificate</a>
+                            <a href="assets/forage_page-0001.jpg"
+                                class="cursor-hover-trigger inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white text-black font-semibold hover:bg-zinc-200 transition-all">View
+                                Certificate</a>
                             <span class="text-zinc-500 text-sm">Credential ID: SA-SIM-2025</span>
                         </div>
                     </div>
                 </div>
 
-                <button id="cert-prev" class="cursor-hover-trigger absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-black/50 border border-white/10 text-white flex items-center justify-center hover:bg-white/10 transition-all">
+                <button id="cert-prev"
+                    class="cursor-hover-trigger absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-black/50 border border-white/10 text-white flex items-center justify-center hover:bg-white/10 transition-all">
                     <i data-lucide="chevron-left" class="w-6 h-6"></i>
                 </button>
-                <button id="cert-next" class="cursor-hover-trigger absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-black/50 border border-white/10 text-white flex items-center justify-center hover:bg-white/10 transition-all">
+                <button id="cert-next"
+                    class="cursor-hover-trigger absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-black/50 border border-white/10 text-white flex items-center justify-center hover:bg-white/10 transition-all">
                     <i data-lucide="chevron-right" class="w-6 h-6"></i>
                 </button>
             </div>
@@ -626,100 +765,120 @@
     <!-- Achievements Section -->
     <section id="achievements" class="relative z-10 py-32 border-t border-zinc-900 bg-zinc-950">
         <div class="container mx-auto px-6 md:px-12 max-w-6xl">
-           <div class="flex items-center gap-3 mb-12">
-             <i data-lucide="trophy" class="text-yellow-500 w-8 h-8"></i>
-             <h2 class="text-3xl md:text-4xl font-bold text-white">Achievements</h2>
-           </div>
-           
-           <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-             <!-- Achievement 1 -->
-             <div class="reveal opacity-0 translate-y-12 transition-all duration-1000 ease-out" style="transition-delay: 0ms;">
-                 <div class="group p-8 rounded-2xl bg-zinc-900/50 border border-zinc-800 hover:border-yellow-500/30 hover:bg-zinc-900 transition-all duration-300 relative overflow-hidden h-full">
-                  <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
-                    <i data-lucide="award" class="w-16 h-16"></i>
-                  </div>
-                  <span class="absolute top-5 right-5 w-8 flex items-center justify-center text-sm font-black text-yellow-400 opacity-100 z-10">
-                    1st
-                  </span>
-                    <span class="inline-block px-3 py-1 rounded-full bg-yellow-500/10 text-yellow-500 text-xs font-bold uppercase tracking-wider mb-4">
-                      1st Prize
-                    </span>
-                    <h3 class="text-xl font-bold text-white mb-2">Jnana Cauvery 2K25</h3>
-                    <p class="text-zinc-400 mb-4">State-Level Project Expo</p>
-                    <p class="text-zinc-600 text-sm font-mono">May 2025</p>
-                    <a href="assets/Pes.jpg" class="cursor-hover-trigger inline-flex items-center gap-2 text-emerald-400 hover:text-emerald-300 font-semibold text-sm mt-3">
-                      <i data-lucide="external-link" class="w-4 h-4"></i>
-                      View Certificate
-                    </a>
-                 </div>
-             </div>
-
-             <!-- Achievement 2 -->
-             <div class="reveal opacity-0 translate-y-12 transition-all duration-1000 ease-out" style="transition-delay: 150ms;">
-                <div class="group p-8 rounded-2xl bg-zinc-900/50 border border-zinc-800 hover:border-yellow-500/30 hover:bg-zinc-900 transition-all duration-300 relative overflow-hidden h-full">
-                   <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
-                     <i data-lucide="award" class="w-16 h-16"></i>
-                   </div>
-                   <span class="absolute top-5 right-5 w-8 flex items-center justify-center text-sm font-black text-gray-300 opacity-100 z-10">
-                     2nd
-                   </span>
-                   <span class="inline-block px-3 py-1 rounded-full bg-yellow-500/10 text-yellow-500 text-xs font-bold uppercase tracking-wider mb-4">
-                     2nd Prize
-                   </span>
-                   <h3 class="text-xl font-bold text-white mb-2">Vyuhanthra 2025</h3>
-                   <p class="text-zinc-400 mb-4">State-Level Project Expo</p>
-                   <p class="text-zinc-600 text-sm font-mono">Oct 2025</p>
-                   <a href="assets/cit.jpg" class="cursor-hover-trigger inline-flex items-center gap-2 text-emerald-400 hover:text-emerald-300 font-semibold text-sm mt-3">
-                      <i data-lucide="external-link" class="w-4 h-4"></i>
-                      View Certificate
-                   </a>
-                </div>
+            <div class="flex items-center gap-3 mb-12">
+                <i data-lucide="trophy" class="text-yellow-500 w-8 h-8"></i>
+                <h2 class="text-3xl md:text-4xl font-bold text-white">Achievements</h2>
             </div>
 
-            <!-- Achievement 3 -->
-            <div class="reveal opacity-0 translate-y-12 transition-all duration-1000 ease-out" style="transition-delay: 300ms;">
-                <div class="group p-8 rounded-2xl bg-zinc-900/50 border border-zinc-800 hover:border-yellow-500/30 hover:bg-zinc-900 transition-all duration-300 relative overflow-hidden h-full">
-                  <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
-                    <i data-lucide="award" class="w-16 h-16"></i>
-                  </div>
-                  <span class="absolute top-5 right-5 w-8 flex items-center justify-center text-sm font-black text-orange-400 opacity-100 z-10">
-                    3rd
-                  </span>
-                   <span class="inline-block px-3 py-1 rounded-full bg-yellow-500/10 text-yellow-500 text-xs font-bold uppercase tracking-wider mb-4">
-                     3rd Prize
-                   </span>
-                   <h3 class="text-xl font-bold text-white mb-2">INNOVONX Hackathon</h3>
-                   <p class="text-zinc-400 mb-4">DSATM Hackathon</p>
-                   <p class="text-zinc-600 text-sm font-mono">Apr 2025</p>
-                   <a href="assets/dsatm.jpg" class="cursor-hover-trigger inline-flex items-center gap-2 text-emerald-400 hover:text-emerald-300 font-semibold text-sm mt-3">
-                      <i data-lucide="external-link" class="w-4 h-4"></i>
-                      View Certificate
-                   </a>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Achievement 1 -->
+                <div class="reveal opacity-0 translate-y-12 transition-all duration-1000 ease-out"
+                    style="transition-delay: 0ms;">
+                    <div
+                        class="group p-8 rounded-2xl bg-zinc-900/50 border border-zinc-800 hover:border-yellow-500/30 hover:bg-zinc-900 transition-all duration-300 relative overflow-hidden h-full">
+                        <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+                            <i data-lucide="award" class="w-16 h-16"></i>
+                        </div>
+                        <span
+                            class="absolute top-5 right-5 w-8 flex items-center justify-center text-sm font-black text-yellow-400 opacity-100 z-10">
+                            1st
+                        </span>
+                        <span
+                            class="inline-block px-3 py-1 rounded-full bg-yellow-500/10 text-yellow-500 text-xs font-bold uppercase tracking-wider mb-4">
+                            1st Prize
+                        </span>
+                        <h3 class="text-xl font-bold text-white mb-2">Jnana Cauvery 2K25</h3>
+                        <p class="text-zinc-400 mb-4">State-Level Project Expo</p>
+                        <p class="text-zinc-600 text-sm font-mono">May 2025</p>
+                        <a href="assets/Pes.jpg"
+                            class="cursor-hover-trigger inline-flex items-center gap-2 text-emerald-400 hover:text-emerald-300 font-semibold text-sm mt-3">
+                            <i data-lucide="external-link" class="w-4 h-4"></i>
+                            View Certificate
+                        </a>
+                    </div>
                 </div>
-            </div>
-            <!-- Achievement 3 -->
-            <div class="reveal opacity-0 translate-y-12 transition-all duration-1000 ease-out" style="transition-delay: 300ms;">
-                <div class="group p-8 rounded-2xl bg-zinc-900/50 border border-zinc-800 hover:border-yellow-500/30 hover:bg-zinc-900 transition-all duration-300 relative overflow-hidden h-full">
-                  <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
-                    <i data-lucide="award" class="w-16 h-16"></i>
-                  </div>
-                  <span class="absolute top-5 right-5 w-8 flex items-center justify-center text-sm font-black text-orange-400 opacity-100 z-10">
-                   Best Project Award
-                  </span>
-                   <span class="inline-block px-3 py-1 rounded-full bg-yellow-500/10 text-yellow-500 text-xs font-bold uppercase tracking-wider mb-4">
-                     Best Project Award
-                   </span>
-                   <h3 class="text-xl font-bold text-white mb-2">BMS Project Expo</h3>
-                   <p class="text-zinc-400 mb-4">BMS College of Engineering</p>
-                   <p class="text-zinc-600 text-sm font-mono">Nov 2025</p>
-                   <a href="assets/BMS.jpg" class="cursor-hover-trigger inline-flex items-center gap-2 text-emerald-400 hover:text-emerald-300 font-semibold text-sm mt-3">
-                      <i data-lucide="external-link" class="w-4 h-4"></i>
-                      View Certificate
-                   </a>
-                </div>
-            </div>
 
-           </div>
+                <!-- Achievement 2 -->
+                <div class="reveal opacity-0 translate-y-12 transition-all duration-1000 ease-out"
+                    style="transition-delay: 150ms;">
+                    <div
+                        class="group p-8 rounded-2xl bg-zinc-900/50 border border-zinc-800 hover:border-yellow-500/30 hover:bg-zinc-900 transition-all duration-300 relative overflow-hidden h-full">
+                        <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+                            <i data-lucide="award" class="w-16 h-16"></i>
+                        </div>
+                        <span
+                            class="absolute top-5 right-5 w-8 flex items-center justify-center text-sm font-black text-gray-300 opacity-100 z-10">
+                            2nd
+                        </span>
+                        <span
+                            class="inline-block px-3 py-1 rounded-full bg-yellow-500/10 text-yellow-500 text-xs font-bold uppercase tracking-wider mb-4">
+                            2nd Prize
+                        </span>
+                        <h3 class="text-xl font-bold text-white mb-2">Vyuhanthra 2025</h3>
+                        <p class="text-zinc-400 mb-4">State-Level Project Expo</p>
+                        <p class="text-zinc-600 text-sm font-mono">Oct 2025</p>
+                        <a href="assets/cit.jpg"
+                            class="cursor-hover-trigger inline-flex items-center gap-2 text-emerald-400 hover:text-emerald-300 font-semibold text-sm mt-3">
+                            <i data-lucide="external-link" class="w-4 h-4"></i>
+                            View Certificate
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Achievement 3 -->
+                <div class="reveal opacity-0 translate-y-12 transition-all duration-1000 ease-out"
+                    style="transition-delay: 300ms;">
+                    <div
+                        class="group p-8 rounded-2xl bg-zinc-900/50 border border-zinc-800 hover:border-yellow-500/30 hover:bg-zinc-900 transition-all duration-300 relative overflow-hidden h-full">
+                        <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+                            <i data-lucide="award" class="w-16 h-16"></i>
+                        </div>
+                        <span
+                            class="absolute top-5 right-5 w-8 flex items-center justify-center text-sm font-black text-orange-400 opacity-100 z-10">
+                            3rd
+                        </span>
+                        <span
+                            class="inline-block px-3 py-1 rounded-full bg-yellow-500/10 text-yellow-500 text-xs font-bold uppercase tracking-wider mb-4">
+                            3rd Prize
+                        </span>
+                        <h3 class="text-xl font-bold text-white mb-2">INNOVONX Hackathon</h3>
+                        <p class="text-zinc-400 mb-4">DSATM Hackathon</p>
+                        <p class="text-zinc-600 text-sm font-mono">Apr 2025</p>
+                        <a href="assets/dsatm.jpg"
+                            class="cursor-hover-trigger inline-flex items-center gap-2 text-emerald-400 hover:text-emerald-300 font-semibold text-sm mt-3">
+                            <i data-lucide="external-link" class="w-4 h-4"></i>
+                            View Certificate
+                        </a>
+                    </div>
+                </div>
+                <!-- Achievement 3 -->
+                <div class="reveal opacity-0 translate-y-12 transition-all duration-1000 ease-out"
+                    style="transition-delay: 300ms;">
+                    <div
+                        class="group p-8 rounded-2xl bg-zinc-900/50 border border-zinc-800 hover:border-yellow-500/30 hover:bg-zinc-900 transition-all duration-300 relative overflow-hidden h-full">
+                        <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+                            <i data-lucide="award" class="w-16 h-16"></i>
+                        </div>
+                        <span
+                            class="absolute top-5 right-5 w-8 flex items-center justify-center text-sm font-black text-orange-400 opacity-100 z-10">
+                            Best Project Award
+                        </span>
+                        <span
+                            class="inline-block px-3 py-1 rounded-full bg-yellow-500/10 text-yellow-500 text-xs font-bold uppercase tracking-wider mb-4">
+                            Best Project Award
+                        </span>
+                        <h3 class="text-xl font-bold text-white mb-2">BMS Project Expo</h3>
+                        <p class="text-zinc-400 mb-4">BMS College of Engineering</p>
+                        <p class="text-zinc-600 text-sm font-mono">Nov 2025</p>
+                        <a href="assets/BMS.jpg"
+                            class="cursor-hover-trigger inline-flex items-center gap-2 text-emerald-400 hover:text-emerald-300 font-semibold text-sm mt-3">
+                            <i data-lucide="external-link" class="w-4 h-4"></i>
+                            View Certificate
+                        </a>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </section>
 
@@ -733,20 +892,26 @@
                         <h2 class="text-3xl font-bold">Education</h2>
                     </div>
                 </div>
-                
+
                 <div class="md:col-span-2 space-y-8">
-                    <div class="reveal opacity-0 translate-y-12 transition-all duration-1000 ease-out" style="transition-delay: 200ms;">
-                        <div class="pl-8 border-l-2 border-zinc-800 hover:border-emerald-500 transition-colors duration-300">
+                    <div class="reveal opacity-0 translate-y-12 transition-all duration-1000 ease-out"
+                        style="transition-delay: 200ms;">
+                        <div
+                            class="pl-8 border-l-2 border-zinc-800 hover:border-emerald-500 transition-colors duration-300">
                             <h3 class="text-2xl font-bold text-white mb-2">Bachelor of Engineering</h3>
                             <p class="text-emerald-400 text-lg mb-2">Electronics and Communication</p>
                             <p class="text-zinc-400 mb-1">Dayananda Sagar Academy of Technology and Management</p>
-                            <span class="inline-block px-3 py-1 bg-zinc-800 rounded-full text-xs text-zinc-400 font-mono">2023 - 2027</span>
+                            <span
+                                class="inline-block px-3 py-1 bg-zinc-800 rounded-full text-xs text-zinc-400 font-mono">2023
+                                - 2027</span>
                         </div>
                     </div>
-                    
-                    <div class="reveal opacity-0 translate-y-12 transition-all duration-1000 ease-out" style="transition-delay: 300ms;">
+
+                    <div class="reveal opacity-0 translate-y-12 transition-all duration-1000 ease-out"
+                        style="transition-delay: 300ms;">
                         <div class="pl-8 border-l-2 border-zinc-800">
-                            <p class="text-zinc-500 italic">"Focusing on embedded systems architecture, circuit design, and intelligent control systems."</p>
+                            <p class="text-zinc-500 italic">"Focusing on embedded systems architecture, circuit design,
+                                and intelligent control systems."</p>
                         </div>
                     </div>
                 </div>
@@ -762,40 +927,37 @@
                     Let's Build.
                 </h2>
             </div>
-            <div class="reveal opacity-0 translate-y-12 transition-all duration-1000 ease-out" style="transition-delay: 200ms;">
+            <div class="reveal opacity-0 translate-y-12 transition-all duration-1000 ease-out"
+                style="transition-delay: 200ms;">
                 <p class="text-xl text-zinc-400 mb-12">
                     Interested in robotics, IoT, or collaborative engineering?
                 </p>
             </div>
-            
-            <div class="reveal opacity-0 translate-y-12 transition-all duration-1000 ease-out" style="transition-delay: 300ms;">
-                <a 
-                    href="mailto:anirudhhs0405@gmail.com"
-                    class="cursor-hover-trigger inline-flex items-center gap-3 bg-white text-black px-8 py-4 rounded-full text-lg font-bold hover:bg-emerald-50 transition-transform hover:scale-105 active:scale-95"
-                >
+
+            <div class="reveal opacity-0 translate-y-12 transition-all duration-1000 ease-out"
+                style="transition-delay: 300ms;">
+                <a href="mailto:anirudhhs0405@gmail.com"
+                    class="cursor-hover-trigger inline-flex items-center gap-3 bg-white text-black px-8 py-4 rounded-full text-lg font-bold hover:bg-emerald-50 transition-transform hover:scale-105 active:scale-95">
                     <i data-lucide="mail" class="w-5 h-5"></i>
                     anirudhhs11@gmail.com
                 </a>
             </div>
 
             <div class="mt-16 flex flex-wrap justify-center gap-6">
-                <div class="reveal opacity-0 translate-y-12 transition-all duration-1000 ease-out" style="transition-delay: 400ms;">
-                    <a 
-                        href="https://github.com/anirudh0405" 
-                        target="_blank" 
-                        class="cursor-hover-trigger flex items-center gap-3 px-8 py-4 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-400 hover:text-white hover:border-zinc-600 hover:bg-zinc-800 transition-all duration-300 group"
-                    >
+                <div class="reveal opacity-0 translate-y-12 transition-all duration-1000 ease-out"
+                    style="transition-delay: 400ms;">
+                    <a href="https://github.com/anirudh0405" target="_blank"
+                        class="cursor-hover-trigger flex items-center gap-3 px-8 py-4 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-400 hover:text-white hover:border-zinc-600 hover:bg-zinc-800 transition-all duration-300 group">
                         <i data-lucide="github" class="w-[22px] h-[22px] group-hover:text-white transition-colors"></i>
                         <span class="font-medium tracking-wide">GitHub</span>
                     </a>
                 </div>
-                <div class="reveal opacity-0 translate-y-12 transition-all duration-1000 ease-out" style="transition-delay: 500ms;">
-                    <a 
-                        href="https://www.linkedin.com/in/anirudh-h-s-249968254/" 
-                        target="_blank" 
-                        class="cursor-hover-trigger flex items-center gap-3 px-8 py-4 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-400 hover:text-white hover:border-blue-500/30 hover:bg-blue-900/10 transition-all duration-300 group"
-                    >
-                        <i data-lucide="linkedin" class="w-[22px] h-[22px] group-hover:text-blue-400 transition-colors"></i>
+                <div class="reveal opacity-0 translate-y-12 transition-all duration-1000 ease-out"
+                    style="transition-delay: 500ms;">
+                    <a href="https://www.linkedin.com/in/anirudh-h-s-249968254/" target="_blank"
+                        class="cursor-hover-trigger flex items-center gap-3 px-8 py-4 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-400 hover:text-white hover:border-blue-500/30 hover:bg-blue-900/10 transition-all duration-300 group">
+                        <i data-lucide="linkedin"
+                            class="w-[22px] h-[22px] group-hover:text-blue-400 transition-colors"></i>
                         <span class="font-medium tracking-wide">LinkedIn</span>
                     </a>
                 </div>
@@ -805,11 +967,14 @@
 
     <!-- Footer -->
     <footer class="relative z-10 py-8 border-t border-white/5">
-        <div class="container mx-auto px-6 md:px-12 flex flex-col md:flex-row justify-between items-center text-zinc-600 text-sm">
+        <div
+            class="container mx-auto px-6 md:px-12 flex flex-col md:flex-row justify-between items-center text-zinc-600 text-sm">
             <p>© 2025 Anirudh H S. Built for the Future.</p>
             <div class="flex gap-6 mt-4 md:mt-0">
-                <a href="https://github.com/anirudh0405" class="hover:text-zinc-400 transition-colors cursor-hover-trigger">GitHub</a>
-                <a href="https://www.linkedin.com/in/anirudh-h-s-249968254/" class="hover:text-zinc-400 transition-colors cursor-hover-trigger">LinkedIn</a>
+                <a href="https://github.com/anirudh0405"
+                    class="hover:text-zinc-400 transition-colors cursor-hover-trigger">GitHub</a>
+                <a href="https://www.linkedin.com/in/anirudh-h-s-249968254/"
+                    class="hover:text-zinc-400 transition-colors cursor-hover-trigger">LinkedIn</a>
             </div>
         </div>
     </footer>
@@ -948,4 +1113,5 @@
         });
     </script>
 </body>
+
 </html>
